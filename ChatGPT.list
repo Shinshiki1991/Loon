@@ -1,12 +1,25 @@
-# NAME: ChatGPT
-# DESC: ChatGPT / OpenAI
+# NAME: Apple Intelligence & ChatGPT
+# DESC: 优先代理 Apple 智能 PCC 专用云计算、隐私中继与 OpenAI 域名
 
-DOMAIN,apple-relay.apple.com
-DOMAIN,apple-relay.cloudflare.com
-DOMAIN,apple-relay.fastly-edge.com
-DOMAIN,apple-relay.mask.apple-dns.net
-DOMAIN,cp4.cloudflare.com
+# Apple Intelligence / PCC / 隐私中继
+DOMAIN-SUFFIX,issuer.apple.com
+DOMAIN-SUFFIX,guzzoni.apple.com
+DOMAIN-SUFFIX,smoot.apple.com
+DOMAIN,ropes.apple.com
+DOMAIN,mask.icloud.com
+DOMAIN,mask-h2.icloud.com
+DOMAIN,mask-api.icloud.com
+DOMAIN,mask.apple-dns.net
+DOMAIN,mask-api.fe.apple-dns.net
 DOMAIN,gspe1-ssl.ls.apple.com
+DOMAIN,apple-relay.apple.com
+DOMAIN,apple-relay.mask.apple-dns.net
+DOMAIN,humb.apple.com
+DOMAIN-SUFFIX,apple-relay.cloudflare.com
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com
+DOMAIN-SUFFIX,cp4.cloudflare.com
+
+# ChatGPT / OpenAI
 DOMAIN-SUFFIX,chat.com
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,oaistatic.com
@@ -19,20 +32,23 @@ DOMAIN,openaiapi-site.azureedge.net
 DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
 DOMAIN,openaicomproductionae4b.blob.core.windows.net
 DOMAIN,production-openaicom-storage.azureedge.net
-DOMAIN,cdn.workos.com
+
+# 登录 / 验证 / 支付 / 客服 / 监控
 DOMAIN,challenges.cloudflare.com
-DOMAIN-SUFFIX,ct.sendgrid.net
+DOMAIN,cdn.workos.com
 DOMAIN,forwarder.workos.com
-DOMAIN,humb.apple.com
 DOMAIN,images.workoscdn.com
+DOMAIN,setup.workos.com
+DOMAIN,workos.imgix.net
+DOMAIN-SUFFIX,ct.sendgrid.net
 DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN,js.stripe.com
 DOMAIN,o207216.ingest.sentry.io
 DOMAIN,o33249.ingest.sentry.io
 DOMAIN,rum.browser-intake-datadoghq.com
-DOMAIN,setup.workos.com
-DOMAIN,workos.imgix.net
+
+# IP
 IP-CIDR,102.37.57.54/32,no-resolve
 IP-CIDR,13.71.25.29/32,no-resolve
 IP-CIDR,135.220.40.201/32,no-resolve
